@@ -1,12 +1,12 @@
 module "launch_template_name" {
-  source = "github.com/traveloka/terraform-aws-resource-naming.git?ref=v0.18.1"
+  source = "github.com/ahafidh/terraform-aws-resource-naming.git?ref=support-terraform-v0.13.2"
 
   name_prefix   = "${var.service_name}-${var.cluster_role}"
   resource_type = "launch_configuration"
 }
 
 module "asg_name" {
-  source = "github.com/traveloka/terraform-aws-resource-naming.git?ref=v0.18.1"
+  source = "github.com/ahafidh/terraform-aws-resource-naming.git?ref=support-terraform-v0.13.2"
 
   name_prefix   = "${var.service_name}-${var.cluster_role}"
   resource_type = "autoscaling_group"
